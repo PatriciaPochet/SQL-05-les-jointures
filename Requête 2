@@ -1,0 +1,5 @@
+SELECT w.lastname,w.firstname, p.role
+FROM wizard w
+JOIN player p ON w.id=p.wizard_id
+WHERE role = 'seeker'
+ORDER BY lastname, firstname
