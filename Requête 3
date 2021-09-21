@@ -1,0 +1,4 @@
+SELECT w.lastname,w.firstname
+FROM wizard w
+LEFT JOIN player p ON w.id=p.wizard_id
+WHERE p.id is NULL
